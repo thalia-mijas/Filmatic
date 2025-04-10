@@ -6,8 +6,6 @@ import * as API from "../../services/movies";
 function Details() {
   const [movieDetail, setMovieDetail] = useState([]);
   const params = useParams();
-  const [genres, setGenres] = useState("");
-  var gen = "";
 
   useEffect(() => {
     API.getMovieDetailById(params.id).then(setMovieDetail).catch(console.log);
