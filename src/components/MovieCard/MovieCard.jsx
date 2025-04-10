@@ -7,7 +7,7 @@ function MovieCard({ title, poster_path, id }) {
       <div className="movie-poster">
         <h3>{title}</h3>
         <img
-          alt={title}
+          alt={`Poster of ${title}`}
           src={`https://image.tmdb.org/t/p/w500${poster_path}`}
         />
       </div>

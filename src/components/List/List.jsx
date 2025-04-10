@@ -21,7 +21,7 @@ function List() {
       {movies.length === 0 ? (
         <div>Loading...</div>
       ) : (
-        <div className="card_cont">
+        <div className="card-cont">
           {console.log(movies.results)}
           {movies.results.map((movie) => (
             <MovieCard key={movie.title} {...movie} />
