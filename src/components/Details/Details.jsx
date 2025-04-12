@@ -9,7 +9,7 @@ function Details() {
 
   useEffect(() => {
     API.getMovieDetailById(params.id).then(setMovieDetail).catch(console.log);
-  }, []);
+  }, [params.id]);
 
   return (
     <>
@@ -28,7 +28,7 @@ function Details() {
               <b>Genres:</b>
             </span>
             <ul>
-              {movieDetail.genres.map((genre) => (
+              {movieDetail.genres?.map((genre) => (
                 <li key={genre.id}>{genre.name}</li>
               ))}
             </ul>

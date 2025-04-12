@@ -1,7 +1,7 @@
 import.meta.env.MODE;
 
 const API_URL = "https://api.themoviedb.org/3/movie";
-const TOKEN = import.meta.env.TOKEN;
+const TOKEN = import.meta.env.VITE_TOKEN;
 
 export async function getAllMovies() {
   try {
@@ -11,6 +11,7 @@ export async function getAllMovies() {
       },
     });
     const data = await response.json();
+    console.log({ data });
     return data;
   } catch (error) {
     console.error(error);
