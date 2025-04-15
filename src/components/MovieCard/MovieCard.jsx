@@ -3,7 +3,7 @@ import "./MovieCard.css";
 
 function MovieCard({ title, poster_path, id }) {
   return (
-    <Link to={`../details/${id}`}>
+    <Link to={`../movie/${id}`}>
       <div className="movie-poster">
         <h3>{title}</h3>
         {poster_path === null ? (
