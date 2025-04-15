@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
 import "./MovieCard.css";
-import { useLocation, useNavigate } from "react-router-dom";
 
 function MovieCard({ title, poster_path, id }) {
-  const location = useLocation().pathname;
-  const navigation = useNavigate();
-
-  // if (location != "/") {
-  //   navigation("/");
-  // }
-
   return (
     <Link to={`../details/${id}`}>
       <div className="movie-poster">

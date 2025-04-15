@@ -5,6 +5,7 @@
 
 .movie-details {
   display: flex;
+  flex-direction: column;
 }
 
 .movie-img {
@@ -20,4 +21,12 @@
 .movie-info {
   padding: 1rem 2rem;
   text-align: justify;
+}
+
+@media (min-width: 750px) {
+
+  .movie-details {
+    flex-direction: row;
+  }
+
 }
