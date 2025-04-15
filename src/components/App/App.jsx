@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Header from "../Header/Header.jsx";
 import List from "../List/List.jsx";
 import Details from "../Details/Details.jsx";
+import Searcher from "../Searcher/Searcher.jsx";
 
 function App() {
   return (
     <>
-      <div className="title">
-        <img className="logo" src="/logo.svg" alt="Logo Filmatic" />
-        <h1>Filmatic</h1>
-      </div>
+      <Header />
       <Routes>
         <Route path="/" element={<List />}></Route>
-        <Route path="detail/:id" element={<Details />}></Route>
+        <Route path="details/:id" element={<Details />}></Route>
+        <Route index path="search/:elect" element={<Searcher />}></Route>
       </Routes>
     </>
   );

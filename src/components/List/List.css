@@ -1,22 +1,3 @@
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  justify-self: center;
-}
-
-.title img {
-  padding-right: 4px;
-}
-
-.logo {
-  width: 75px;
-  height: 75px;
-}
-
 .card-cont {
   width: 100%;
   display: grid;

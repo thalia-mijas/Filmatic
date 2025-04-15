@@ -14,7 +14,7 @@ function List() {
         setError(err.message);
         console.log(error);
       });
-  }, []);
+  }, [error]);
 
   return (
     <>
@@ -22,9 +22,8 @@ function List() {
         <div>Loading...</div>
       ) : (
         <div className="card-cont">
-          {console.log(movies.results)}
           {movies.results.map((movie) => (
-            <MovieCard key={movie.title} {...movie} />
+            <MovieCard key={movie.id} {...movie} />
           ))}
         </div>
       )}
