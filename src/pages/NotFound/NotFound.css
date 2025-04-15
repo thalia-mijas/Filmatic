@@ -1,0 +1,21 @@
+.notfound-cont img {
+  height: 300px;
+}
+
+.notfound-cont p {
+  width: 100%;
+  font-size: xx-large;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 750px) {
+
+  .notfound-cont img {
+    width: 400px;
+    height: 350px;
+  }
+
+}
