@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./List.css";
-import MovieCard from "../MovieCard/MovieCard";
-import * as API from "../../services/movies";
+import MovieCard from "../MovieCard/MovieCard.jsx";
+import * as API from "../../services/movies.js";
 
 function List() {
   const [movies, setMovies] = useState([]);

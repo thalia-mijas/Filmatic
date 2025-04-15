@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import * as API from "../../services/movies";
-import MovieCard from "../MovieCard/MovieCard";
+import MovieCard from "../MovieCard/MovieCard.jsx";
+import * as API from "../../services/movies.js";
 
 const Searcher = () => {
   const [movieSearched, setMovieSearched] = useState([]);
