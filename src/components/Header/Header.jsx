@@ -7,13 +7,10 @@ function Header() {
   const navigation = useNavigate();
 
   const handleKeyDown = (event) => {
-    console.log(event);
     if (searchMovie != "") {
-      if (event.type === "keydown") {
+      if (event.key === "Enter") {
         navigation(`search/${searchMovie.replace(" ", "+")}`);
       }
-    } else {
-      navigation(`/`);
     }
   };
 

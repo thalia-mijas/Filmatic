@@ -44,6 +44,9 @@ function Details() {
               <p>
                 <b>Vote average:</b> {movieDetail.vote_average}
               </p>
+              <p>
+                <b>Release date:</b> {movieDetail.release_date}
+              </p>
             </div>
           </div>
         </div>
