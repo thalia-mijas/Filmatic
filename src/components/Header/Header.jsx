@@ -19,7 +19,7 @@ function Header() {
       <div className="cont-header">
         <div className="title">
           <img className="logo" src="/logo.svg" alt="Logo Filmatic" />
-          <h1>Filmatic</h1>
+          <h1>Filmatic 1.0</h1>
         </div>
         <input
           type="text"
